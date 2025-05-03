@@ -162,7 +162,7 @@ margin-right: auto;
   margin: 0;
   padding: 0;
   width: 100%;  /* 必須：右寄せを効かせるため */
-  max-width: 600px; /* オプション：横幅制限 */
+  flex-wrap: nowrap;
 }
 
 
@@ -175,7 +175,7 @@ margin-right: auto;
   color: white;
   text-align: center;
   border-radius: 5px;
-　font-size: 14px;
+　white-space: nowrap;
 }
     
 @media (max-width: 768px) {
@@ -191,19 +191,20 @@ margin-right: auto;
     flex-wrap: wrap;         /* 折り返し可能にする */
     justify-content: center; /* 5つを中央に並べる（またはleftもOK） */
     padding: 0;
+    width: 100%
   }
 
 .menu-item {
-    width: 20%;
+    flex: 0 0 auto;
     text-align: center;
-    margin: 2px 0;
+    margin: 0 1px;
   }
     
   .menu-item a {
-    width: 100%;
-    padding: 8px 0;
-    font-size: 14px;
-    box-sizing: border-box;
+    font-size: 12px;           
+    padding: 6px 8px;
+    white-space: nowrap;      
+    display: inline-block;
   }
 
   h1.title {
