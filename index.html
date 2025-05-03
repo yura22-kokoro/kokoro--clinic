@@ -4,7 +4,7 @@
 
 <head><!– ここから裏の設定ですよという宣言 –>
 
-<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
     
 <meta charset=”utf-8″><!– 文字化け防止の記述 –>
 
@@ -73,6 +73,38 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    .menu-group {
+      padding: 0;
+      text-align: center;
+    }
+
+    .menu-item {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 0;
+    }
+
+    p {
+      width: 90%;
+      font-size: 14px;
+      padding: 15px;
+    }
+
+    header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+  }
+    
+    
 </style>
 
 
@@ -124,7 +156,7 @@ margin-right: auto;
 .menu-item{
  list-style: none;
  display: inline-block;
- margin-rigt: auto;
+ margin-right: auto;
  padding: 10px;
 }
 
