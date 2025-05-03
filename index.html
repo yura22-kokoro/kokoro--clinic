@@ -153,19 +153,44 @@ header{
 margin-right: auto;
 }
 
-.menu-item{
- display: inline-block;
- width: 20%;
- box-size: border-box;
- list-style: none;
- border: 2px solid #9ed6ff;
- border-radius: 5px;
- text-align: center;
- background-color:#52b5ff;
- margin: 0;
- padding: 4px;
+.menu-group {
+  display: flex;
+  justify-content: flex-end;  /* ← 右寄せ！ */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+
+..menu-item {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border: 2px solid #9ed6ff;
+  background-color: #52b5ff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+    
+@media (max-width: 768px) {
+  .menu-group {
+    display: flex;
+    flex-wrap: wrap;         /* 折り返し可能にする */
+    justify-content: center; /* 5つを中央に並べる（またはleftもOK） */
+    padding: 0;
+  }
+
+  .menu-item {
+    width: 20%;              /* 5分割 */
+    margin: 2px 0;
+    padding: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+}
+
+    
 </style>
 
 </header>
