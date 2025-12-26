@@ -1,220 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
 
-
-<html><!– ここからHTMLが始まりますというタグ –>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
-<meta charset=”utf-8″><!– 文字化け防止の記述 –>
-
-<meta http-equiv=”X-UA-Compatible” content=”IE=edge”><!– ややこしいので無視してOK –>
-
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>こどものこころクリニック</title>
+
 <style>
 
-    
-h1 {
-
-    font-weight: normal;
-    padding-bottom: 10px;
-    color:#52b5ff;
-    position: relative;
-    letter-spacing: 10px;
-    margin-right: auto;
-    margin-left:10px; 
-
+/* ===== 共通 ===== */
+* {
+  box-sizing: border-box;
 }
-
-.p-colored{
-
-    width: 95%;
-    line-height: 0.5;
-    display: inline-block;
-    background-color: #94e4ff;
-    padding: 20px;
-    position: relative;
-    z-index: 999;
-    margin: 10px 0 10px;
-    color: #000000;
-    letter-spacing: 2px;
-     border-radius: 5px;
-}
-
-
- .p-plain{
-    width: 100%;
-    line-height: 1.6;
-    display: inline-block;
-    background-color: transparent;
-    padding: 20px;
-    position: relative;
-    z-index: 999;
-    margin: 50px 0 0;
-    color: #000000;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-size: 14px;
- }
-    
 
 body {
-
-    background-color: #f0faff;
-    padding: 30px 30px 30px;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
-    position: relative;
-
+  background-color: #f0faff;
+  padding: 0;
+  margin: 0;
 }
 
-.box{
- width: 90%;
- max-wide: 500px;
- height: 360px;
- background-color: #fbfbe4;
- margin: 20px auto;
- margin-top: 0;
- border: 1px solid #ccc;
- border-radius: 8px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- text-align: center; 
- padding: 10px;
- box-sizing: border-box;
+/* ===== タイトル ===== */
+h1 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: #52b5ff;
+  letter-spacing: 10px;
+  margin-left: 10px;
 }
 
-.tit{
- font-size: 18px;
- margin-bottom: 10px
-    
-}
-
-.timetable {
-  border-collapse: collapse;
-  width: 100%;
-　table-layout: fixed;
-}
-
-.timetable th, .timetable td {
-  border: 1px solid #aaa;
-  padding: 5px;
-  text-align: center;
-}
-    
-
-@media (max-width: 600px) {
-    h1 {
-      font-size: 20px;
-      letter-spacing: 5px;
-      text-align: center;
-    }
-
-    .menu-group {
-      padding: 0;
-      text-align: center;
-    }
-
-    .menu-item {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 0;
-    }
-
-    p {
-      width: 90%;
-      font-size: 14px;
-      padding: 15px;
-    }
-
-    header {
-      flex-direction: column;
-      height: auto;
-      width:100%;
-      padding: 10px 0;
-    　box-sizing:border-box;
-    　margin:　0;
-    }
-
-   .box{
- width: 400px;
- height: 288px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- text-align: center;
- padding: 10px;
- box-sizing: border-box;
-}
-
-.tit{
- font-size: 18px;
- margin-bottom: 10px
-    
-}
-    
-  }
-    
-    
-</style>
-
-
-
-
-
-
-
-
-<header>
-
-
-
-
-
-
- 
-
-
-
-<style>
-
-
-/* ← ヘッダー・PCver */
-header{
+/* ===== ヘッダー（PC） ===== */
+header {
   display: flex;
-  justify-content: space-between; /* ← タイトルとメニューを左右に配置 */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 150px;
   background-color: #fbfbe4;
-　padding: 0 20px;
-　box-sizing:border-box;
-　margin: 0px;
-}
-
-
-.title{
-margin-right: auto;
+  padding: 0 20px;
 }
 
 .menu-group {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;  /* 必須：右寄せを効かせるため */
-  flex-wrap: nowrap;
-  background-color: ;
 }
 
-
-.menu-item a{
+.menu-item a {
   display: inline-block;
-　width: 100px;
-  heigh: 10px;
+  width: 100px;
   margin: 0 1px;
   padding: 8px 10px;
   border: 2px solid #9ed6ff;
@@ -222,96 +56,80 @@ margin-right: auto;
   color: white;
   text-align: center;
   border-radius: 5px;
-　white-space: nowrap;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-
-
-/* ← ヘッダー・スマホver */
+/* ===== ヘッダー（スマホ） ===== */
 @media (max-width: 600px) {
 
- header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-    box-sizing:border-box;
-    width: 100%;
-    margin: 0; 
-    overflow-x: hidden;
-  }
-  .menu-group {
-    display: flex;
-    aligm-items: center;
-    justify-content: space-between; /* 5つを中央に並べる（またはleftもOK） */
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-.menu-item {
-    flex: 0 0 auto;
-    text-align: center;
-    margin: 0 1px;
-    width: 24%;
-  }
-  .menu-item a {
-    width: 100%;
-    max-width: 100%;
-    font-size: 12px;           
-    padding: 6px 4px;
-    white-space: nowrap;      
-    display: inline-block;
-  }
-  h1.title {
-    text-align: center;
+  h1 {
     font-size: 20px;
     letter-spacing: 5px;
-    margin-bottom: 10px;
+    text-align: center;
   }
-  img{
- margin-left:10px;
- margin-right:10px;
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .menu-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-item {
+    flex: 1;
+    margin: 0 2px;
+    text-align: center;
+  }
+
+  .menu-item a {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 4px;
+  }
 }
-}   
 
+/* ===== 画像 ===== */
+img {
+  max-width: 100%;
+}
 
-
-
-
-
-.nittei{
+/* ===== 診察時間 ===== */
+.nittei {
   background-color: #fbfbe4;
   width: 80%;
   height: 350px;
-  margin: 0 auto;
-  margin-top: 5%;
+  margin: 5% auto 0;
   border-radius: 5px;
   border: solid 4px #f7f7df;
 }
-.nittei1{
+
+.nittei1 {
   font-weight: bold;
   padding-top: 25px;
-  display: block;
-  height: 30px;
-  background-color: ;
- text-align: center;
+  text-align: center;
 }
-.nitteihyo{
-  margin : 0 auto;
-  border: solid 1px black;
+
+.nitteihyo {
+  margin: 0 auto;
   width: 90%;
   height: 200px;
   border-collapse: collapse;
-  background-color: ;
 }
+
 .nitteihyo th,
-.nitteihyo td{
+.nitteihyo td {
   border: 1px solid #000;
   text-align: center;
   padding: 6px 8px;
 }
-.nittei2{
+
+.nittei2 {
   text-align: center;
   background-color: rgba(82, 181, 255, 0.2);
   width: 50%;
@@ -319,139 +137,94 @@ margin-right: auto;
   border-radius: 5px;
 }
 
-@media (max-width: 600px){
-  .nittei{
+@media (max-width: 600px) {
+  .nittei {
     height: 450px;
   }
-  .nittei2{
-    line-height: 0.2;
+
+  .nittei2 {
     width: 80%;
+    line-height: 0.2;
   }
 }
 
-
-.aisatu{
+/* ===== ご挨拶 ===== */
+.aisatu {
   width: 80%;
   height: 250px;
   margin: 0 auto;
   text-align: center;
-  background-color: ;
   padding-top: 5%;
 }
-.aisatudai{
-  background-color: ;
+
+.aisatudai {
   border-bottom: solid 1px black;
 }
-.aisatubun{
+
+.aisatubun {
   text-align: left;
 }
-@media (max-width: 600px){
-  .nittei2{
-    line-height: 0.2;
-  }
-}
 
-
-
-
-
-<header>
-
-
-    
-<head><!– ここから裏の設定ですよという宣言 –>
-
-
-
-
- <h1> こどものこころクリニック</h1>
- <nav class="nav">
-  <ul class="menu-group">
-  　<li class="menu-item"><a href="https://yura22-kokoro.github.io/kokoro--clinic/">ホーム</a></li>
-  　<li class="menu-item"><a href="#">アクセス</a></li>
-  　<li class="menu-item"><a href="#">予約</a></li>
-  　<li class="menu-item"><a href="#">お問い合わせ</a></li>
-　</ul>
- </nav>
-
+</style>
 </head>
 
+<body>
+
+<header>
+  <h1>こどものこころクリニック</h1>
+  <nav>
+    <ul class="menu-group">
+      <li class="menu-item"><a href="https://yura22-kokoro.github.io/kokoro--clinic/">ホーム</a></li>
+      <li class="menu-item"><a href="#">アクセス</a></li>
+      <li class="menu-item"><a href="#">予約</a></li>
+      <li class="menu-item"><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
 </header>
 
-
-<div style="text-align:center;"> 
- <img src="https://raw.githubusercontent.com/yura22-kokoro/kokoro--clinic/main/5093921_s.jpg" style="width:95%; max-width:600px; border-radius:10px; margin-top: 10px;">
+<div style="text-align:center;">
+  <img src="https://raw.githubusercontent.com/yura22-kokoro/kokoro--clinic/main/5093921_s.jpg"
+       style="width:95%; max-width:600px; border-radius:10px; margin-top:10px;">
 </div>
-
-
 
 <div class="nittei">
   <div class="nittei1">診察時間</div>
   <table class="nitteihyo">
     <tr>
-       <th>　　　　</th>
-        <th>月</th>
-        <th>火</th>  
-        <th>水</th>
-        <th>木</th>
-        <th>金</th>
-        <th>土</th>
-        <th>日祝</th>
-      </tr>
-     <tr>
-      <td class="time">9：15～12:30</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>ー</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>ー</td>
-     </tr>
-     <tr>
-      <td class="time">13：30～18:00</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>ー</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>〇</td>
-      <td>ー</td>
-     </tr>
-     <tr>
-      <td class="time">18：00～19:00</td>
-      <td>ー</td>
-      <td>ー</td>
-      <td>ー</td>
-      <td>ー</td>
-      <td>★</td>
-      <td>ー</td>
-      <td>ー</td>
-     </tr>
+      <th></th>
+      <th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日祝</th>
+    </tr>
+    <tr>
+      <td>9：15～12:30</td>
+      <td>〇</td><td>〇</td><td>ー</td><td>〇</td><td>〇</td><td>〇</td><td>ー</td>
+    </tr>
+    <tr>
+      <td>13：30～18:00</td>
+      <td>〇</td><td>〇</td><td>ー</td><td>〇</td><td>〇</td><td>〇</td><td>ー</td>
+    </tr>
+    <tr>
+      <td>18：00～19:00</td>
+      <td>ー</td><td>ー</td><td>ー</td><td>ー</td><td>★</td><td>ー</td><td>ー</td>
+    </tr>
   </table>
-   <div class="nittei2"><p>休診日：水・日・祝</p><p>★：第二金曜日は18時まで</p></div>
+  <div class="nittei2">
+    <p>休診日：水・日・祝</p>
+    <p>★：第二金曜日は18時まで</p>
+  </div>
 </div>
 
 <div class="aisatu">
   <p class="aisatudai">ご挨拶</p>
-  <p class="aisatubun">当院のホームページをご覧いただき、ありがとうございます。ここは、子どもたちの心の成長にそっと寄り添う場所です。不安な気持ちが強いときも、少し落ち着いているときも、その子のペースを大切にしながら関わっています。</p>
-  <p class="aisatubun">小さなころから通われ、成長とともに悩みの形が変わっていくかたもいっらっしゃいます。「大きくなったね」と笑顔で声をかけられる、そんな関係を続けていけたらと思っています。</p>
-  <p class="aisatubun">この場所が、いつでも安心して戻ってこられる場所でありますように。</p>
+  <p class="aisatubun">
+    当院のホームページをご覧いただき、ありがとうございます。ここは、子どもたちの心の成長にそっと寄り添う場所です。
+  </p>
+  <p class="aisatubun">
+    小さなころから通われ、成長とともに悩みの形が変わっていくかたもいらっしゃいます。
+  </p>
+  <p class="aisatubun">
+    この場所が、いつでも安心して戻ってこられる場所でありますように。
+  </p>
 </div>
-    
-    
 
-</body><!– ここまでがページに表示される内容ですよという宣言 –>
-
-</html><!– ここまでがHTMLですという終わりの宣言 –>
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
