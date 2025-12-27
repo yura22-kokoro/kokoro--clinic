@@ -104,48 +104,44 @@ img {
     margin: 0 auto;
     width: 80%;
     background-color: ;
-    margin-top: 10%;
-    position: relative;
-    text-align: ;
+    margin-top: 5%;
     
+    text-align: ;
+    padding: 5% 0;
   }
   .nagaredai{
-    height: 30px;
-    background-color: ;
-  }
-  .line{
-    border-bottom: double 5px #89ACD7;
-    width: 25%;
-    position: absolute;
-    top: 16%;
-    left:0;
-  }
-    .line2{
-    border-bottom: double 5px #474740;
-    width: 80%;
-    position: absolute;
-    top: 16%;
-    left: 25%;
-  }
+  display: block;
+  height: 30px;
+  position: relative;
+}
+.nagaredai::before{
+  content: "";
+  border-bottom: double 5px #89ACD7;
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nagaredai::after{
+  content: "";
+  border-bottom: double 5px #474740;
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
   
   
 
 /* ===== ご挨拶 ===== */
-.aisatu {
-  width: 80%;
-  height: 250px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 5%;
-}
-
-.aisatudai {
-  border-bottom: solid 1px black;
-}
-
-.aisatubun {
-  text-align: left;
-}
+.
+  
+  
+  
+  
+  
+  
+  
 
 </style>
 </head>
@@ -167,7 +163,7 @@ img {
 
 
 <div class="nagare">
-  <div class="nagaredai">診察の流れ</div><div class="line"></div><div class="line2"></div>
+  <div class="nagaredai">診察に流れついて</div><div class="line"></div><div class="line2"></div>
   <p class="nagaresetumei">このページは初めて来院するお子さまや、その保護者の方が、診察の流れを安心して知ることができるように作りました。</p><p>
 「次に何をするのかな？」と不安にならず、落ち着いて診察を受けられるよう、順番や雰囲気をわかりやすくご紹介しています。</p>
 
@@ -176,20 +172,11 @@ img {
   
   
   
+  <div class="otonamuke">
+    <div class-"setumei">診察の流れ</div>
+  </div>
   
-  
-<div class="aisatu">
-  <p class="aisatudai">ご挨拶</p>
-  <p class="aisatubun">
-    当院のホームページをご覧いただき、ありがとうございます。ここは、子どもたちの心の成長にそっと寄り添う場所です。
-  </p>
-  <p class="aisatubun">
-    小さなころから通われ、成長とともに悩みの形が変わっていくかたもいらっしゃいます。
-  </p>
-  <p class="aisatubun">
-    この場所が、いつでも安心して戻ってこられる場所でありますように。
-  </p>
-</div>
+
 
 </body>
 </html>
