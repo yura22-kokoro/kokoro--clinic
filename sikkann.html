@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>こどものこころクリニック</title>
+
+<style>
+
+/* ===== 共通 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0faff;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== タイトル ===== */
+h1 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: #52b5ff;
+  letter-spacing: 10px;
+  margin-left: 10px;
+}
+
+/* ===== ヘッダー（PC） ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #fbfbe4;
+  padding: 0 20px;
+}
+
+.menu-group {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item a {
+  display: inline-block;
+  width: 114px;
+  margin: 0 1px;
+  padding: 8px 10px;
+  border: 2px solid #9ed6ff;
+  background-color: #52b5ff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+  @media (max-width: 1100px){
+    h1 {
+    font-size: 55px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+    header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+  }
+  
+/* ===== ヘッダー（スマホ） ===== */
+@media (max-width: 870px) {
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .menu-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-item {
+    flex: 1;
+    margin: 0 2px;
+    text-align: center;
+  }
+
+  .menu-item a {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+}
+
+/* ===== 冒頭説明 ===== */
+img {
+  max-width: 100%;
+}
+
+/* ===== 診察について ===== */
+  .nagare{
+    margin: 0 auto;
+    width: 80%;
+    background-color: ;
+    margin-top: 5%;
+    
+    text-align: ;
+    padding: 5% 0;
+  }
+  .nagaredai{
+  display: block;
+  height: 30px;
+  position: relative;
+}
+.nagaredai::before{
+  content: "";
+  border-bottom: double 5px #89ACD7;
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nagaredai::after{
+  content: "";
+  border-bottom: double 5px #474740;
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+  
+  
+
+/* ===== 診察の流れ大人向け ===== */
+  .otonamuke{
+    background-color: ;
+    margin: 5% 0;
+    padding: 2% 0;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid #89ACD7;
+    border-radius: 4px;
+  }
+  .setumei{
+    background-color: ;
+    padding-bottom: 2%;
+  }
+  .setumeidai{
+    background-color: ;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 1%;
+  }
+  .setumeibun{
+    background-color: ;
+    padding-bottom: 4%;
+    margin-left: 2%;
+  }
+  
+  
+  /* ===== 診察の流れ子供向け ===== */
+  .kodomomuke{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 5%;
+    background-color: ;
+    
+  }
+  .kodomomuke p{
+    margin: 0;
+  }
+  .kodomomuke img{
+    width: 70%;
+    
+  }
+  
+  
+  
+  
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>こどものこころクリニック</h1>
+  <nav>
+    <ul class="menu-group">
+      <li class="menu-item"><a href="https://yura22-kokoro.github.io/kokoro--clinic/">ホーム</a></li>
+      <li class="menu-item"><a href="https://yura22-kokoro.github.io/sinsatu/">診察について</a></li>
+      <li class="menu-item"><a href="#">各所との連携</a></li>
+      <li class="menu-item"><a href="#">心のお悩み</a></li>
+      <li class="menu-item"><a href="#">ご案内</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<div class="nagare">
+  <div class="nagaredai">診察に流れついて</div><div class="line"></div><div class="line2"></div>
+  <p class="nagaresetumei">このページは初めて来院するお子さまや、その保護者の方が、診察の流れを安心して知ることができるように作りました。</p><p>
+「次に何をするのかな？」と不安にならず、落ち着いて診察を受けられるよう、順番や雰囲気をわかりやすくご紹介しています。</p>
+
+</div>
+
+  
+  
+  
+  <div class="otonamuke">
+    <div class="setumei">～診察の流れ～</div>
+    <p class="setumeidai">1,受付</p>
+    <p class="setumeibun">ご来院されましたら、受付でお名前をお伝えください。
+初めての方や不安のあるお子さまにも、スタッフがやさしくお声がけします。</p>
+    <p class="setumeidai">2,待合室</p>
+    <p class="setumeibun">診察までの時間は、待合室でお過ごしください。
+絵本やおもちゃなどをご用意しており、落ち着いて過ごせる空間づくりを心がけています。</p>
+    <p class="setumeidai">3,診察前のお話</p>
+    <p class="setumeibun">診察の前に、看護師や医師が現在の様子や気持ちについて簡単にお話をうかがいます。
+お子さまのペースを大切にし、無理に話すことはありません。</p>
+    <p class="setumeidai">4,診察</p>
+    <p class="setumeibun">医師が、お子様やご家族のお話を元に診察を行います。成長やこれまでの経過も踏まえながら、その時々に合ったかかわり方を一緒に考えていきます。</p>
+    <p class="setumeidai">5,診察後</p>
+    <p class="setumeibun">診察後は、必要に追うして今後の見通しや次回の予定についてご説明します。お子様が「がんばった」と感じられるよう、あたたかく声をかけてお見送りします。</p>
+    </div>
+  
+  <div class="kodomomuke">
+    <p>※こちらは、お子さま向けに診察の流れをイラストでご説明したものです。</p><p>ご家庭でプリントして、事前にご覧いただくこともできます。</p>
+  <img src="https://raw.githubusercontent.com/yura22-kokoro/kokoro--clinic/refs/heads/main/8023.png">
+</div>
+  
+
+
+
+</body>
+</html>
